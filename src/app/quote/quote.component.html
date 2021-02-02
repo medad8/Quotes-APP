@@ -1,19 +1,23 @@
-
+<!-- <p>quotes works!</p> -->
+<div class="container">    
+    <hr>
+    <div class="row">
+        <!-- displaying content -->
+      <div class="col-md-5">
+        <p class="Qheading">Quotes</p>   
+            <div *ngFor='let quote of quotes;let i =index' class="card"><br> 
+                <ul> 
+                    <li appStrikethrough>{{quote.name}}  Generated on {{quote.completeDate|date|uppercase}} </li> <br>                   
+                    <button class="btn btn-primary" style="color:wheat" (click)='toggleDetails(i)'>Show Details</button>
+                    
+                    <app-quote-details *ngIf='quote.showDescription' [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
+                </ul>                
+            </div>
+        </div>         
+        <div class="col-md-2"></div>
+        <!-- displaying Quote-form -->
         <div class="col-md-5">
-            <p class="Qheading">Quotes</p>   
-                <div *ngFor='let quote of quotes;let i =index' class="card"><br> 
-                    <ul> 
-                        <li appStrikethrough>{{quote.name}}  Generated on {{quote.completeDate|date|uppercase}} </li> <br>                   
-                        <button class="btn btn-primary" style="color:wheat" (click)='toggleDetails(i)'>Show Details</button>
-                        
-                        <app-quote-details *ngIf='quote.showDescription' [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
-                    </ul>                
-                </div>
-            </div>         
-            <div class="col-md-2"></div>
-            <!-- displaying Quote-form -->
-            <div class="col-md-5">
-                <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-            </div> 
-        </div>
-        
+            <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+        </div> 
+    </div>     
+</div>   
