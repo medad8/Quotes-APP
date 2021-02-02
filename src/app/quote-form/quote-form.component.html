@@ -4,7 +4,7 @@
     <hr>
     <form (ngSubmit)='submitQuote()' #quoteForm='ngForm' role="form" name="form" novalidate>
       <div class="form-group">
-        <label for="name">Quotes-App</label>
+        <label for="name">Quote</label>
         <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.name" placeholder="Enter Quote here" name="name" #name='ngModel' required>
         
         <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
