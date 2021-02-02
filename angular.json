@@ -1,15 +1,14 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "c5162d8a-cf4c-4e0e-9da9-e470e0769b90"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Quotes-App": {
+    "Quotes": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:application": {
-          "strict": true
-        }
-      },
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -17,7 +16,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Quotes-App",
+            "outputPath": "dist/Quotes",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -43,6 +42,7 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
+              "extractCss": true,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
@@ -50,13 +50,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
                 }
               ]
             }
@@ -65,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Quotes-App:build"
+            "browserTarget": "Quotes:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Quotes-App:build:production"
+              "browserTarget": "Quotes:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Quotes-App:build"
+            "browserTarget": "Quotes:build"
           }
         },
         "test": {
@@ -113,16 +113,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Quotes-App:serve"
+            "devServerTarget": "Quotes:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Quotes-App:serve:production"
+              "devServerTarget": "Quotes:serve:production"
             }
           }
         }
       }
-    }
-  },
-  "defaultProject": "Quotes-App"
+    }},
+  "defaultProject": "Quotes"
 }

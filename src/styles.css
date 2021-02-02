@@ -1,1 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-image: url(../images/126-1268415_web-backgrounds.jpg);
+}
+
+h1{
+    color:blue ;
+    margin-top: 2px;
+    text-align: center;    
+}
+
+.Qheading{
+    padding-left: 100px;
+    color:black;
+    font-size: 1.6rem;
+}
+
+ul{
+    list-style-type: none;
+    color: rgb(185, 17, 67);
+}
+p{
+    color: black;
+}
+
+.card {
+    margin-bottom: 2%;
+    /* background-color: burlywood; */
+  }
+
+  .like{
+      color:rgb(187, 114, 114);
+
+  }
+  .dislike{
+      color: rgb(185, 196, 196);
+  }
+
+  span{
+      color: rgb(40, 3, 248);
+      font-weight: 700;
+  }
+
+  /* footer */
+  footer{
+      background-color: rgb(10, 10, 10);
+      color: white;
+  }

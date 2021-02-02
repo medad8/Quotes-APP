@@ -1,0 +1,12 @@
+<!-- <p>quote-detail works!</p> -->
+
+<p>{{quotes.description}}</p>
+<p> Author:{{quotes.author}}</p>
+<p> Submitted by:{{quotes.submittedby}}</p>
+<p> <span>Quotes Posted:</span>{{quotes.completeDate|dateCount}} days ago</p>  
+ 
+<div class="card-footer">
+  <a (click)="likeButtonClick()" ><i class="fa fa-thumbs-up fa-lg like"></i>{{upVotes}}</a> 
+  <a (click)="dislikeButtonClick()"><i class="fa fa-thumbs-down fa-lg dislike"></i>{{downVotes}}</a>
+  <button (click)='quoteDelete(true)' class="btn btn-outline-danger" style="margin-left: 50%"><i class="far fa-trash-alt"></i></button>
+</div>
