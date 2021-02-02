@@ -38,11 +38,11 @@
 
         <div class="form-group">
           <label for="complete">Date</label>
-        
-          
+          <input type='date' class="form-control" id="completeDate" required [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate='ngModel' >
+          <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">  
             <p>Date is required</p>
-        
         </div>
+        
         <button type="submit" class="btn btn-primary"  ng-disabled="form.$invalid">Add Quote</button>
     </form>
 </div>
