@@ -12,8 +12,8 @@ export class QuoteComponent implements OnInit {
 
   // updating output binding property
   quotes: Quote[] = [
-    new Quote(1, 'Time Quote', '"Time is the wisest counselor of all."','Pericles', 'medad orowe', new Date(2018, 7, 23)),
-    new Quote(2, 'Friendship Quote', '“Friendship is the only cement that will ever hold the world together.”', 'Woodrow T. Wilson', 'ken joe', new Date(2019, 4, 11))
+    new Quote(1, 'Time Quote', '"Time is the wisest counselor of all."','Pericles', 'medad orowe', new Date(2019, 7, 27)),
+    new Quote(2, 'Friendship Quote', '“Friendship is the only cement that will ever hold the world together.”', 'Woodrow T. Wilson', 'ken joe', new Date(2020, 10, 10))
   ];
 
   // click event binding
