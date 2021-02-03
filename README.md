@@ -1,6 +1,45 @@
-# QuotesApp
+# Quotes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.2.
+<table>
+<tr>
+<td>
+ Quotes is an application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational. User canCreate a new quote, Upvote or downvote a quote, Delete a quote and See the number of upvotes and number of downvotes for each quote.
+</td>
+</tr>
+</table>
+
+## Demo
+Here is a working live demo :  https://medad8.github.io/Quotes-App/
+
+## [Usage]( https://medad8.github.io/Quotes-App/ )
+### Development
+
+Want to contribute? Awesome!
+To fix a bug or enhance an existing module, follow these steps:
+- Fork the repo
+- Create a new branch (`git checkout -b improve-feature`)
+- Make the appropriate changes in the files
+- Add changes to reflect the changes made
+- Commit your changes (`git commit -am 'Improve feature'`)
+- Push to the branch (`git push origin improve-feature`)
+- Create a Pull Request
+
+## Built with
+
+- [HTML](https://www.w3schools.com/html/) - HTML tutorial.
+- [CSS](https://www.w3schools.com/css/) - css tutorial.
+- [Typescript](Tour of Heroes app and tutorial) - Typescrit tutorial.
+- [ Angular ](https://angular.io/tutorial) - Tour of Heroes app and tutorial
+
+## Author
+- Medad Wuoddorry
+
+## License 
+[MIT](https://github.com/medad8/Quotes-App/blob/master/LICENSE.md)
+
+ © [Medad Orowe](https://github.com/medad8)
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
 
 ## Development server
 
@@ -24,4 +63,4 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
