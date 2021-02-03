@@ -26,10 +26,9 @@ To fix a bug or enhance an existing module, follow these steps:
 
 ## Built with
 
-- [HTML](https://www.w3schools.com/html/) - HTML tutorial.
-- [CSS](https://www.w3schools.com/css/) - css tutorial.
-- [Typescript](Tour of Heroes app and tutorial) - Typescrit tutorial.
-- [ Angular ](https://angular.io/tutorial) - Tour of Heroes app and tutorial
+- [HTML]- HTML tutorial.
+- [CSS] - css tutorial.
+- [ Angular ]- Tour of Heroes app and tutorial
 
 ## Author
 - Medad Wuoddorry
